@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحتي الشخصية</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>مرحبًا بكم في صفحتي الشخصية</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">نبذة عني</a></li>
+                <li><a href="#projects">مشاريعي</a></li>
+                <li><a href="#contact">تواصل معي</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>نبذة عني</h2>
+        <img src="MyDesk.bmp" alt="صورة شخصية" class="C:\Users\T i T O\Desktop\صور" width="200" height="200">
+        <p>أنا مطور ويب أحب البرمجة والتصميم. أعمل على بناء مواقع وتطبيقات ويب مبتكرة تهدف إلى تحسين تجربة المستخدم.</p>
+    </section>
+
+    <section id="projects">
+        <h2>مشاريعي</h2>
+        <ul>
+            <li><i class="fas fa-shopping-cart"></i> مشروع 1: موقع للتجارة الإلكترونية</li>
+            <li><i class="fas fa-blog"></i> مشروع 2: مدونة شخصية</li>
+            <li><i class="fas fa-code"></i> مشروع 3: تطبيق ويب تفاعلي</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>تواصل معي</h2>
+        <form id="contactForm">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">الرسالة:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+        <div id="messageSent" class="hidden">شكرًا، تم إرسال رسالتك بنجاح!</div>
+    </section>
+
+    <footer>
+        <p>حقوق الطبع والنشر © 2024 جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // منع الإرسال الفوري للنموذج
+            document.getElementById('messageSent').classList.remove('hidden');
+        });
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdB4rExNtm-n5z13YeF0U3WVM1o6TwkwM76LL_XyHZA1XddaQ/viewform?embedded=true" width="640" height="1005" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+    </script>
+</body>
+</html>
